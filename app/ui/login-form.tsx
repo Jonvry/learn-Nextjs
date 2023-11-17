@@ -1,5 +1,4 @@
-'use client';
- 
+'use client'; 
 import { lusitana } from '@/app/ui/fonts';
 import {
   AtSymbolIcon,
@@ -67,7 +66,8 @@ export default function LoginForm() {
           aria-live="polite"
           aria-atomic="true"
         >
-          {state === 'CredentialsSignin' && (
+          {/* state === 'CredentialsSignin' &&  */}
+          {state && (
             <>
               <ExclamationCircleIcon className="h-5 w-5 text-red-500" />
               <p className="text-sm text-red-500">Invalid credentials</p>
